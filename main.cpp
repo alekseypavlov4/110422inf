@@ -33,3 +33,26 @@ int qwe(int a)
 
 	return 0;
 }
+
+int pln(int a)
+{	    
+    int t = a;
+    int b = 0;
+    
+    while (t != 0)
+    {
+        b = b * 10 + t % 10;
+        t /= 10;
+    }
+    
+    if (a == b)
+	{
+        cout<<"palindrome"<<endl;
+    }
+    else
+	{
+        cout<<"not a palindrome"<<endl;
+    }
+    
+    return 0;
+}
